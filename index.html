@@ -2,29 +2,78 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Loja de fone</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0 , user-scalable=yes" />
+<title>Loja store</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
 <link rel="stylesheet" href="CSS/reset.css" />
+<link rel="stylesheet" href="CSS/base.css" />
 <link rel="stylesheet" href="CSS/container-store.css" />
 <link rel="stylesheet" href="CSS/header-store.css" />
+<link rel="stylesheet" href="CSS/input-search.css" />
+<link rel="stylesheet" href="CSS/photo-product.css" />
+<link rel="stylesheet" href="CSS/wrap-product.css" />
+<link rel="stylesheet" href="CSS/description-product.css" />
 <link rel="stylesheet" href="CSS/button-store.css" />
+
 </head>
 
 <body>
 <div class="container-store">
 <header class="header-store">
-<h1 class="title">LOGO</h1>
+
+<h1 class="title">Logo</h1>
+
 <nav class="navigation">
-<a class="action" href="http://collabcode.training">Produtos</a>
-<a class="action" href="http://collabcode.training">Serviços</a>
-<a class="action last" href="http://collabcode.training">Carrinho (10)</a>
+<form class="input-search">
+  <input class="content" type="search" placeholder="Buscar" /><!--
+--><input class="icon -open -active" type="image" src="img/search.svg" /><!--
+--><input class="icon -close" type="image" src="img/close.svg" />
+</form>
+<ul id="menu" class="list">
+<li class="item -menu"><a href="#menu" class="menu">menu</a></li>
+<li class="item"><a class="action" href="http://collabcode.training">Produtos<div class="border"></div></a></li>
+<li class="item"><a class="action" href="http://collabcode.training">Serviços<div class="border"></div></a></li>
+<li class="item -last"><a class="action" href="http://collabcode.training">Carrinho (10)<div class="border"></div></a></li>
+</ul>
 </nav>
 </header>
 
-<a class="button-store-second" href=comprar.html">Adicionar no carrinho</a>
-<a class="button-store" href=comprar.html">Comprar</a>
+<figure class="photo-product"><img class="photo" src="img/fone.png" alt="Fone de ouvido" /></figure>
+<section class="wrap-product">
+<dl class="description-product">
+<dt class="title">Fone top, feliz e caro</dt>
+<dd class="item -heart"><img class="icon" src="img/heart.png" alt="like" />
+<img class="icon -active" src="img/heart-active.png" alt="like" />
+</dd>
+<dd class="item -star">
+<img class="icon" src="img/star-active.png" alt="estrela" />
+<img class="icon" src="img/star-active.png" alt="estrela" />
+<img class="icon" src="img/star-active.png" alt="estrela" />
+<img class="icon" src="img/star-active.png" alt="estrela" />
+<img class="icon" src="img/star.png" alt="estrela" />
+
+
+</dd>
+<dd class="item -number">4.0 (97)</dd>
+<dd class="item -sep"><strong class="contrast">Frete</strong> C$ 108</dd>
+<dd class="item -sep -last"><strong class="contrast">Preço</strong> C$ 340</dd>
+<dd class="text ">Fone TOP com um cor feliz que não tem fio. A cor também é algo que impressiona junto com o  seu layout modernão! Ele é caro? É! Mas compre que você não vai se arrepender e se você se arrepender pode vender no mercado livre..kkkk</dd>
+<dd class="text -more"><a href="" class="action">Saber mais...</a></dd>
+
+</dl>
+<div class="buttons">
+<button class="button-store -second">Adicionar no carrinho</button>
+<a class="button-store" href="comprar.html">Comprar</a>
 </div>
+</section>
+
+</div>
+<script src="js/header-store.js"></script>
+<script src="js/input-search.js"></script>
+<script src="js/description-product.js"></script>
+<script src="js/home.js"></script>
+
 </body>
 </html>
 
